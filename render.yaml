@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: my-radio
+    env: docker
+    dockerfilePath: ./Dockerfile
+    port: 80
+    disk:
+      name: radio-storage
+      mountPath: /var/azuracast/storage
+      sizeGB: 1
