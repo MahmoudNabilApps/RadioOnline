@@ -1,3 +1,3 @@
-FROM azuracast/azuracast_web_v2:latest
-EXPOSE 80
-CMD ["supervisord", "-c", "/etc/supervisor/supervisord.conf"]
+FROM moul/icecast:latest
+EXPOSE 8000
+CMD ["icecast2", "-c", "/etc/icecast2/icecast.xml"]
